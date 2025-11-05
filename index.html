@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analytics Dashboard by Aryan</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+    
+    
+        * { margin: 0; padding: 0; box-sizing: border-box; } 
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: #0d1117;
+            color: #e6edf3;    }
+
+        header {
+            background: linear-gradient(135deg, #00f5d4, #00bbf9, #fee75c);
+            color: #0d1117;
+            padding: 60px 20px;
+            text-align: center;  }
+
+        h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; margin-bottom: 10px; }
+
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+
+        .section {
+            background: #161b22;
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #30363d;
+            box-shadow: 0 0 20px rgba(0, 245, 212, 0.15);}
+
+        h2 { color: #00f5d4; font-size: 2rem; margin-bottom: 20px; display: flex; align-items: center; gap: 15px; }
+
+        h3 { color: #00bbf9; font-size: 1.5rem; margin: 25px 0 15px 0; display: flex; align-items: center; gap: 10px; }
+
+        .content-box {
+            background: rgba(0, 245, 212, 0.05);
+            border-left: 4px solid #00f5d4;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;   }
+
+        .content-box p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #c9d1d9;   }
+
+        .content-box ul {
+            margin-left: 25px;
+            line-height: 2;  }
+
+        .content-box li {
+            margin-bottom: 10px;
+            color: #c9d1d9; }
+
+        .highlight {
+            color: #00f5d4;
+            font-weight: 600;   }
+
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; margin: 20px 0; }
+        .gallery img { width: 100%; border-radius: 15px; transition: 0.3s; }
+        .gallery img:hover { transform: scale(1.05); box-shadow: 0 20px 50px rgba(0, 245, 212, 0.3); }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0; }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            background: linear-gradient(135deg, #161b22, rgba(0, 245, 212, 0.1));
+            border: 2px solid #30363d;
+            border-radius: 15px;
+            color: #e6edf3;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            border-color: #00f5d4;
+            background: linear-gradient(135deg, rgba(0, 245, 212, 0.1), rgba(0, 187, 249, 0.1));
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 245, 212, 0.3);
+        }
+
+        .btn i { font-size: 1.5rem; color: #00f5d4; }
+
+        footer { background: #161b22; padding: 40px 20px; text-align: center; border-top: 1px solid #30363d; margin-top: 60px; }
+
+        @media (max-width: 768px) {
+            .section { padding: 25px; margin: 20px 10px; }
+            .gallery { grid-template-columns: 1fr; }
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blu-Cat-Gen store Sales and Performance Report by Aryan - Excel Analysis</h1>
+        <p>'Customer Insights To Grow Sales In Upcoming Year .</p>
+    </header>
+    <div class="container">
+
+
+
+
+
+
+        <!-- Objective Section -->
+        <section class="section">
+            <h2><i class="fas fa-bullseye"></i> Project Objective</h2>
+            <div class="content-box">
+                <p>Blu-Cat-Gen store wants to create an annual sales report so that , they can understand their customers and grow more sales in upcoming year.</p>
+                <ul>
+                    <li>Track sales performance and key metrics</li>
+                    <li>Identify trends and growth opportunities</li>
+                    <li>Analyze customer behavior patterns</li>
+                    <li>Enable data-driven decision making</li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <!-- Preview Section -->
+        <section class="section">
+            <h2><i class="fas fa-eye"></i> Dashboard Preview</h2>
+            <div class="gallery">
+                <img src="SALESDASH.png" alt="Dashboard Screenshot">
+                <img src="SALESDASH.gif" alt="Animated Preview">
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- Key Insights Section -->
+        <section class="section">
+            <h2><i class="fas fa-chart-line"></i> Key Insights</h2>
+            <div class="content-box">
+                <p>Analysis of sales data revealed important patterns and opportunities:</p>
+                <ul>
+                    <li>Sales Trends: Sales peaked in March, with a steady decline in both sales value and order count from March onwards through December. 
+This may indicate strong seasonality or a campaign effect early in the year.</li>
+                  <li>
+Top Sales Channels: Amazon holds the largest sales share among channels (35.48%), followed by Flipkart (21.59%) 
+and Myntra (23.36%), highlighting where most customers prefer to place their orders.</li>
+<li>Order Status: An overwhelming majority (92%) of orders are delivered, with very low percentages for returned (3%),
+ refunded (2%), and cancelled (3%) orders, reflecting efficient fulfillment and customer satisfaction.</li>
+ <li>Gender-wise Sales: Women make up 64% of the sales, while men contribute to 36%, 
+indicating a customer base that is predominantly female.</li>
+<li>Customer Segmentation: The age and gender breakdown shows adult women are the largest segment (34.59%), 
+followed by teenage girls (21.13%). Male adults and teenagers represent smaller shares, suggesting targeted marketing opportunities.</li>
+<li>Geographic Performance: The top 5 performing states are Maharashtra (2.99M sales), Karnataka (2.65M),
+Uttar Pradesh (2.10M), Telangana (1.71M), and Tamil Nadu (1.68M), showing strong demand in both West, South, and North India.</li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- Data Section -->
+        <section class="section">
+            <h2><i class="fas fa-database"></i> Source Data</h2>
+            <div class="grid">
+                <a href="SuperStore Sales DataSet.xlsx" download class="btn">
+                    <i class="fas fa-file-excel"></i>
+                    <span>Download Excel File</span>
+                </a>
+                <a href="SuperStore_Sales_Dataset.csv" download class="btn">
+                    <i class="fas fa-file-csv"></i>
+                    <span>Download CSV File</span>
+                </a>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+    
+      
+      <!-- Downloads Section -->
+<section class="section">
+    <h2><i class="fas fa-download"></i> Download Dashboard</h2>
+    <div class="grid">
+       
+        <a href="SALESDASH1.pdf" target="_blank" class="btn">
+            <i class="fas fa-file-pdf"></i>
+            <span>main report page pdf</span>
+        </a>
+       
+        <a href="SALESDASH.xlsx" target="_blank" class="btn">                
+            <i class="fas fa-file-excel"></i>
+            <span>Excel Project File</span>
+        </a>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Conclusion Section -->
+        <section class="section">
+            <h2><i class="fas fa-check-circle"></i> Conclusion</h2>
+            <div class="content-box">
+                <p>The dashboard reveals that while Amazon leads as a channel and female customers, 
+                especially adults and teenagers, are the primary audience, there is a noticeable seasonal peak in early months. 
+                The company’s delivery efficiency is high, with most orders successfully fulfilled and few returns or cancellations.
+                Focusing marketing efforts on women in Maharashtra, Karnataka, and other top states, 
+                particularly during peak months, could further boost performance and sales growth. </p>
+                <ul>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Power BI Dashboard Project by Aryan</p>
+    </footer>
+</body>
+</html>
